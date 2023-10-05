@@ -19,8 +19,8 @@ namespace UNUMSelfPwdReset.Managers
             try
             {
                  
-              string[] scopes = new string[] { "User.Read" };
-                //  string[] scopes = new string[] { "UserAuthenticationMethod.ReadWrite.All" };
+              //string[] scopes = new string[] { "User.Read" };
+                  string[] scopes = new string[] { "UserAuthenticationMethod.ReadWrite.All" };
 
                 string clientId = _config.GetValue<string>("AzureAd:ClientId"); 
                 string tenantId = _config.GetValue<string>("AzureAd:TenantId");
